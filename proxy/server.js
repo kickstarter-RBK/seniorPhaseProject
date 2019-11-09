@@ -1,10 +1,25 @@
 const express = require("express");
+const bodyParser = require("body-parser");
 const app = express();
-const morgan = require("morgan");
-const path = require("path");
 var port = 8000;
-app.use(morgan("dev"));
-app.use(express.static(path.join(__dirname, "public")));
+
+
+
+
+
+app.use(express.static(__dirname + "/public"));
+app.use(express.urlencoded());
+
+
+
+app.use(bodyParser.urlencoded({ extended: false }));
+app.use(bodyParser.json());
+
+
+
+
+
 app.listen(port, () => {
   console.log(`Server is listening on ${port}`);
 });
+//
