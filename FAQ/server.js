@@ -1,8 +1,12 @@
 const express = require("./node_modules/express");
+const bodyParser = require("body-parser");
 const app = express();
+app.use(express.static(__dirname + "/client/dist"));
+app.use(bodyParser.urlencoded({ extended: false }));
+app.use(bodyParser.json());
 var port = 3002;
 app.get("/", function(req, res) {
-  res.send("Hello World2");
+  res.send("server");
 });
 
 app.listen(port, () => {
