@@ -4,10 +4,9 @@
   "description": "",
   "main": "server.js",
   "scripts": {
+    "react-dev": "webpack -d --watch",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon server.js",
-    "dev-react": "webpack -d --watch"
-
+    "start": "nodemon server.js"
   },
   "keywords": [],
   "author": "",
@@ -23,10 +22,10 @@
     "mongoose": "^5.7.8",
     "react": "^16.11.0",
     "react-dom": "^16.11.0",
-    "requests": "^0.3.0",
-    "webpack": "^4.41.2"
+    "requests": "^0.3.0"
   },
   "devDependencies": {
+    "webpack": "^4.41.2",
     "webpack-cli": "^3.3.10"
   }
 }
