@@ -8,17 +8,17 @@ app.use(bodyParser.json());
 
 var port = process.env.PORT || 3001;
 
-// app.get("/item", function(req, res) {
-//   res.send("server");
-// });
+app.get("/item", function(req, res) {
+  res.send("server");
+});
 
-// app.get("/items", (req, res) => {
-//   Item.find({})
-//     .sort({ date: -1 })
-//     .then(items => {
-//       res.json(items);
-//     });
-// });
+app.get("/items", (req, res) => {
+  Item.find({})
+    .sort({ date: -1 })
+    .then(items => {
+      res.json(items);
+    });
+});
 app.listen(port, () => {
   console.log(`Server is listening on ${port}`);
 });
