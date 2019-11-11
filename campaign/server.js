@@ -1,7 +1,7 @@
 const express = require("./node_modules/express");
 const bodyParser = require("body-parser");
 const app = express();
-const Item = require("../models/db.js").Item;
+const Item = require("./db.js").Item;
 app.use(express.static(__dirname + "/client/dist"));
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
