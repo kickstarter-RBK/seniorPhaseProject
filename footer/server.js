@@ -2,7 +2,7 @@ const express = require("express");
 const bodyParser = require("body-parser");
 const app = express();
 var port = process.env.PORT || 3003;
-const Item = require("../models/db.js").Item;
+
 
 app.use(express.static(__dirname + "/client/dist"));
 app.use(express.urlencoded());
