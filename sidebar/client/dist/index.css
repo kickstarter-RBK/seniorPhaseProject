@@ -83,11 +83,17 @@
   padding-left: 8px;
   font-size: 8px;
 }
-.gifts {
+.firstRow {
+  font-size: 5px;
+  color: #606361;
+}
+.secondRow {
   font-size: 8px;
 }
-
-.delInfo {
-  float: left;
-  display: flex;
+.giftList {
+  font-weight: 300;
+}
+.otherRewards:hover {
+  background: #009d73;
+  /* content: attr("select this reward"); */
 }
