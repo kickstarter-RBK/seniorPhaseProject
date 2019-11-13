@@ -4,64 +4,64 @@ class About extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      projectData: []
+      projectData: {}
     };
-
+  }
+  retreivData() {
     var that = this;
     $.ajax({
       type: "GET",
       url: "/items",
       success: function(collection) {
-        that.setState({
-          projectData: collection
-        });
         console.log(collection);
+        that.setState({
+          projectData: collection[0]
+        });
       },
       error: function(request, status, error) {
         console.log(error);
       }
     });
   }
-
+  componentDidMount() {
+    this.retreivData();
+  }
   render() {
     console.log(this.state.projectData);
-    if (this.state.projectData.length) {
-      return (
-        <div id="main">
-          <h3>About</h3>
-          <div>
-            <img src={this.props.data.projImg1} />
-            <br>{this.props.data.projDescription1}</br>
-            <img src={this.props.data.projImg2} />
-            <img src={this.props.data.projImg20} />
-            <br>{this.props.data.projDescription2}</br>
-            <img src={this.props.data.projImg3} />
-            <img src={this.props.data.projImg30} />
-            <img src={this.props.data.projImg31} />
-            <img src={this.props.data.projImg32} />
-            <br>{this.props.data.projDescription3}</br>
-            <img src={this.props.data.projImg4} />
-            <br>{this.props.data.projDescription4}</br>
-            <img src={this.props.data.projImg5} />
-            <img src={this.props.data.projImg50} />
-            <img src={this.props.data.projImg51} />
-            <img src={this.props.data.projImg52} />
-            <img src={this.props.data.projImg53} />
-            <br>{this.props.data.projDescription5}</br>
-            <br>{this.props.data.projDescription50}</br>
-            <img src={this.props.data.projImg6} />
-            <img src={this.props.data.projImg60} />
-            <br>{this.props.data.projDescription6}</br>
-            <br>{this.props.data.projDescription60}</br>
-            <br>{this.props.data.projDescription61}</br>
-            <br>{this.props.data.projDescription62}</br>
-            <br>{this.props.data.projDescription63}</br>
-            <img src={this.props.data.projImg7} />
-          </div>
-          ))
+    return (
+      <div className="main">
+        <h3 className="about">About</h3>
+        <div>
+          <img src={this.state.projectData.projImg1} />
+          <p>{this.state.projectData.projDescription1}</p>
+          <img src={this.state.projectData.projImg2} />
+          <img src={this.state.projectData.projImg20} />
+          <p>{this.state.projectData.projDescription2}</p>
+          <img src={this.state.projectData.projImg3} />
+          <img src={this.state.projectData.projImg30} />
+          <img src={this.state.projectData.projImg31} />
+          <img src={this.state.projectData.projImg32} />
+          <p>{this.state.projectData.projDescription3}</p>
+          <img src={this.state.projectData.projImg4} />
+          <p>{this.state.projectData.projDescription4}</p>
+          <img src={this.state.projectData.projImg5} />
+          <img src={this.state.projectData.projImg50} />
+          <img src={this.state.projectData.projImg51} />
+          <img src={this.state.projectData.projImg52} />
+          <img src={this.state.projectData.projImg53} />
+          <p>{this.state.projectData.projDescription5}</p>
+          <p>{this.state.projectData.projDescription50}</p>
+          <img src={this.state.projectData.projImg6} />
+          <img src={this.state.projectData.projImg60} />
+          <p>{this.state.projectData.projDescription6}</p>
+          <p>{this.state.projectData.projDescription60}</p>
+          <p>{this.state.projectData.projDescription61}</p>
+          <p>{this.state.projectData.projDescription62}</p>
+          <p>{this.state.projectData.projDescription63}</p>
+          <img src={this.state.projectData.projImg7} />
         </div>
-      );
-    } else null;
+      </div>
+    );
   }
 }
 

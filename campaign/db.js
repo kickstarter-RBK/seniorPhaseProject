@@ -72,11 +72,11 @@ let pSave = () => {
     rewards: [
       {
         title: project.rewards[0].title,
-        pledgeAmount: project.rewards[1].pledgeAmount,
-        description: project.rewards[2].description,
-        estimatedDelivery: project[3].rewards.estimatedDelivery,
-        shipping: project.rewards[4].numberofBackers,
-        rewardQuantity: project[5].rewardQuantity
+        pledgeAmount: project.rewards[0].pledgeAmount,
+        description: project.rewards[0].description,
+        estimatedDelivery: project[0].rewards.estimatedDelivery,
+        shipping: project.rewards[0].numberofBackers,
+        rewardQuantity: project[0].rewardQuantity
       }
     ],
     projImg: project.projImg,
