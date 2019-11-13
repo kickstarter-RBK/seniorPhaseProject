@@ -13,11 +13,9 @@ app.get("/item", function(req, res) {
 });
 
 app.get("/items", (req, res) => {
-  Item.find({})
-    .sort({ date: -1 })
-    .then(items => {
-      res.json(items);
-    });
+  Item.find({ _id: "5dcaa8e37e3769748f438611" }).then(items => {
+    res.json(items);
+  });
 });
 app.listen(port, () => {
   console.log(`Server is listening on ${port}`);
