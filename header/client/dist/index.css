@@ -120,11 +120,6 @@ a{
     fill: #282828;
 }
 
-
-
-img {
-    max-width: 100%;
-}
 .z4 {
     z-index: 4;
 }
@@ -144,12 +139,13 @@ video {
     z-index: 1;
 }
 .vid{
+    margin-left: 30px;
     padding-left: 18px;
     padding-right: 18px;
     vertical-align: top;
     float: left;
     position: relative;
-    width: calc(8/12 * 100%) !important;
+    width: calc(5/12 * 100%) !important;
 }
 .aspect-ratio{
     background: #000000;
@@ -170,22 +166,20 @@ video {
     
 }
 .vidBtn{
-    height: 15%; 
-    width: 15%;
+    height: 10%; 
+    width: 13%;
     padding: 0.8rem;
     margin: auto;
     background-color: #007460;
-    border-color: #FFFFFF;
-    border-width: 0.2rem;
-    border: 0.1rem solid #DCDEDD;
+    border: 0.1rem solid  #FFFFFF;
     box-sizing: inherit;
     font-family: inherit;
     line-height: unset !important;
 
 }
 .svg-icon__icon--play{
-    width: 2rem;
-    height: 2rem;
+    width: 1.3rem;
+    height: 1.3rem;
     box-sizing: inherit;
     display: inline-block;
     vertical-align: middle;
@@ -264,14 +258,15 @@ video {
     color: #282828; 
 }
 .info{
-    padding-left: 940px;
+    padding-left:500px;
     vertical-align: top;
+    
    margin-left: 380px;
     position: relative;
     width: calc(3/12 * 100%) !important;
 }
 .lineth{
-    width: 100%;
+    width: 90%;
     margin-bottom: 1.8rem;
 }
 .line{
@@ -283,27 +278,57 @@ video {
     margin-bottom: 1.0rem;
 }
 .pledeged{
-    font-weight: 0;
+    font-weight: 600;
     display: inline-block;
-    color: #037362;
-    font-size: 2.0rem;
-    line-height: 3.6rem;
+    color: #027d39;
+    font-size: 1.8rem;
+    line-height: 2.8rem;
 }
 .type-font{
     line-height: 1.8rem;
     color: #656969;
-    font-size: 1.2rem;
+    font-size: 1.0rem;
     display: block;
 }
 .type-2{
-    font-weight: 500;
+    font-weight: 550;
     color: #656969;
     display: block;
-    font-size: 2.2rem;
-    line-height: 3.6rem;
+    font-size: 1.6rem;
+    line-height: 2.0rem;
 }
 .ml5{
-    margin-left: 3rem; 
+    margin-left: 2.7rem; 
     display: block;
     color: #656969;
+}
+
+.back-project-buttonClass{
+    margin-bottom: 1.8rem;
+    display: block;
+    background-color: #009E74;
+    color: #FFFFFF ;
+    height: 4.8rem;
+    line-height: 4.8rem;
+    padding: 0 2.4rem;
+    font-size: 1.3rem;
+    font-weight: lighter;
+    text-align: center;
+}
+.remindBtn{
+    width: 100%;
+    box-shadow: inset 0px 0px 0px 1px #DCDEDD;
+    background-color: #FFFFFF;
+    color: #282828 !important;
+    padding: 0 1.8rem;
+    font-size: 1.4rem;
+    height: 4.2rem;
+    font-weight: 500;
+    transition: all 0.25s ease-in-out !important;
+    text-align: center;
+    position: relative;
+    display: inline-block;
+}
+.text-nowrap{
+
 }
