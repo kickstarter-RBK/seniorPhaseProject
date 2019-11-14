@@ -1,6 +1,5 @@
 import ReactDOM from "react-dom";
 import React from "react";
-import "../dist/index.css";
 import Introduction from "./components/introduction.jsx";
 import Support from "./components/support.jsx";
 import Reward from "./components/reward.jsx";

@@ -6,36 +6,33 @@
     <link rel="stylesheet" type="text/css" href="index.css" />
     <link rel="stylesheet" type="text/css" href="sideBar.css" />
     <link rel="stylesheet" type="text/css" href="footer.css" />
+    <style>
+      .container {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        grid-template-rows: auto auto auto;
+      }
+      #header {
+        grid-area: 1 / 1 / span 1 / span 3;
+      }
+      #campaign {
+        grid-area: 2 / 2 / span 1 / span 1;
+      }
+      #sidebar {
+        grid-area: 2 / 3 / span 1 / span 1;
+      }
+      #footer {
+        grid-area: 3 / 1 / span 1 / span 3;
+      }
+    </style>
   </head>
   <body>
-    <table width="50%" height="150%">
-      <tr>
-        <div width="150%" id="header"></div>
-      </tr>
-      <tr>
-        <td></td>
-      </tr>
-      <tr>
-        <div>
-          <td>
-            <div
-              width="50%"
-              height="150%"
-              id="campaign"
-              style="margin:center"
-            ></div>
-          </td>
-        </div>
-
-        <div>
-          <td><div id="sidebar"></div></td>
-        </div>
-      </tr>
-
-      <tr width="100%">
-        <td><div id="footer" style="width:200%"></div></td>
-      </tr>
-    </table>
+    <div class="container">
+      <div id="header"></div>
+      <div id="campaign"></div>
+      <div id="sidebar"></div>
+      <div id="footer"></div>
+    </div>
 
     <script
       crossorigin

@@ -1,13 +1,14 @@
 .about {
-  font-size: 1.1rem;
+  font-size: 1.8rem;
+  font-weight: 300;
 }
 #cimg {
-  height: auto;
+  height: 100%;
   display: block;
-  max-width: 40%;
+  max-width: 100%;
 }
 #cp {
   font-size: 1.1rem;
   line-height: 2rem;
-  max-width: 40%;
+  max-width: 50%;
 }

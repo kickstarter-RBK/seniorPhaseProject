@@ -10,6 +10,7 @@ app.use(express.urlencoded());
 
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
+
 app.get("/items", (req, res) => {
   console.log("hele");
   Item.find({}).then(items => {

@@ -2,6 +2,7 @@
 .container {
   cursor: pointer;
   position: relative;
+  height: 50%;
 }
 /*owner image */
 .logo {
@@ -24,34 +25,52 @@
   cursor: pointer;
   text-align: left;
   padding-top: 40px;
-  width: auto;
-  width: 250px;
+  width: 40%;
+  height: 65%;
   border: 0.1px solid#d1e0e0;
 }
 /*Patrick Sherwin*/
 .title {
-  font-size: 10px;
+  font-size: 18px;
   font-weight: 600;
   text-align: left;
+  padding-left: 10%;
 }
 .pa {
-  font-size: 8px;
+  font-size: 16px;
   text-align: left;
+  height: 65%;
+  padding-left: 10%;
+  padding-top: 3%;
+  padding-right: 5%;
+  padding-bottom: 5%;
+  font-weight: 300;
+}
+.par {
+  font-size: 16px;
+  text-align: left;
+  height: 65%;
+  padding: 3% 0% 0% 0%;
 }
 
 /*Support.jsx component*/
 .support {
-  font-size: 12px;
-  font-weight: 400;
+  font-size: 20px;
+  font-weight: 300;
   line-height: 30px;
   font-family: Sans-serif;
 }
 .pledge__info {
-  width: 250px;
+  width: 40%;
+  height: 65%;
   border: 0.1px solid#d1e0e0;
-  font-size: 10px;
+  font-size: 16px;
   text-align: center;
   font-family: Sans-serif;
+}
+.pledge__amount {
+  font-size: 16px;
+  font-weight: 300;
 }
 .Input {
   margin-bottom: 8px;
