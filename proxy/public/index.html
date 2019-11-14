@@ -2,12 +2,41 @@
 <html>
   <head>
     <title>Proxy</title>
+    <link rel="stylesheet" type="text/css" href="./style.css" />
+    <link rel="stylesheet" type="text/css" href="index.css" />
+    <link rel="stylesheet" type="text/css" href="sideBar.css" />
+    <link rel="stylesheet" type="text/css" href="footer.css" />
   </head>
   <body>
-    <div id="header"></div>
-    <div id="campaign"></div>
-    <div id="faq"></div>
-    <div id="footer"></div>
+    <table width="50%" height="150%">
+      <tr>
+        <div width="150%" id="header"></div>
+      </tr>
+      <tr>
+        <td></td>
+      </tr>
+      <tr>
+        <div>
+          <td>
+            <div
+              width="50%"
+              height="150%"
+              id="campaign"
+              style="margin:center"
+            ></div>
+          </td>
+        </div>
+
+        <div>
+          <td><div id="sidebar"></div></td>
+        </div>
+      </tr>
+
+      <tr width="100%">
+        <td><div id="footer" style="width:200%"></div></td>
+      </tr>
+    </table>
+
     <script
       crossorigin
       src="https://unpkg.com/react@16/umd/react.development.js"

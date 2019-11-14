@@ -32,33 +32,33 @@ class About extends React.Component {
       <div className="main">
         <h3 className="about">About</h3>
         <div>
-          <img src={this.state.projectData.projImg1} />
-          <p>{this.state.projectData.projDescription1}</p>
-          <img src={this.state.projectData.projImg2} />
-          <img src={this.state.projectData.projImg20} />
-          <p>{this.state.projectData.projDescription2}</p>
-          <img src={this.state.projectData.projImg3} />
-          <img src={this.state.projectData.projImg30} />
-          <img src={this.state.projectData.projImg31} />
-          <img src={this.state.projectData.projImg32} />
-          <p>{this.state.projectData.projDescription3}</p>
-          <img src={this.state.projectData.projImg4} />
-          <p>{this.state.projectData.projDescription4}</p>
-          <img src={this.state.projectData.projImg5} />
-          <img src={this.state.projectData.projImg50} />
-          <img src={this.state.projectData.projImg51} />
-          <img src={this.state.projectData.projImg52} />
-          <img src={this.state.projectData.projImg53} />
-          <p>{this.state.projectData.projDescription5}</p>
-          <p>{this.state.projectData.projDescription50}</p>
-          <img src={this.state.projectData.projImg6} />
-          <img src={this.state.projectData.projImg60} />
-          <p>{this.state.projectData.projDescription6}</p>
-          <p>{this.state.projectData.projDescription60}</p>
-          <p>{this.state.projectData.projDescription61}</p>
-          <p>{this.state.projectData.projDescription62}</p>
-          <p>{this.state.projectData.projDescription63}</p>
-          <img src={this.state.projectData.projImg7} />
+          <img id="cimg" src={this.state.projectData.projImg1} />
+          <p id="cp">{this.state.projectData.projDescription1}</p>
+          <img id="cimg" src={this.state.projectData.projImg2} />
+          <img id="cimg" src={this.state.projectData.projImg20} />
+          <p id="cp">{this.state.projectData.projDescription2}</p>
+          <img id="cimg" src={this.state.projectData.projImg3} />
+          <img id="cimg" src={this.state.projectData.projImg30} />
+          <img id="cimg" src={this.state.projectData.projImg31} />
+          <img id="cimg" src={this.state.projectData.projImg32} />
+          <p id="cp">{this.state.projectData.projDescription3}</p>
+          <img id="cimg" src={this.state.projectData.projImg4} />
+          <p id="cp">{this.state.projectData.projDescription4}</p>
+          <img id="cimg" src={this.state.projectData.projImg5} />
+          <img id="cimg" src={this.state.projectData.projImg50} />
+          <img id="cimg" src={this.state.projectData.projImg51} />
+          <img id="cimg" src={this.state.projectData.projImg52} />
+          <img id="cimg" src={this.state.projectData.projImg53} />
+          <p id="cp">{this.state.projectData.projDescription5}</p>
+          <p id="cp">{this.state.projectData.projDescription50}</p>
+          <img id="cimg" src={this.state.projectData.projImg6} />
+          <img id="cimg" src={this.state.projectData.projImg60} />
+          <p id="cp">{this.state.projectData.projDescription6}</p>
+          <p id="cp">{this.state.projectData.projDescription60}</p>
+          <p id="cp">{this.state.projectData.projDescription61}</p>
+          <p id="cp">{this.state.projectData.projDescription62}</p>
+          <p id="cp">{this.state.projectData.projDescription63}</p>
+          <img id="cimg" src={this.state.projectData.projImg7} />
         </div>
       </div>
     );
