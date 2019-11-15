@@ -1,0 +1,118 @@
+/*Introduction.jsx component*/
+.container {
+  cursor: pointer;
+  position: relative;
+  height: 50%;
+}
+/*owner image */
+.logo {
+  position: relative;
+  display: block;
+  border-radius: 50%;
+  height: 3rem;
+  width: 3rem;
+  border: none;
+  cursor: pointer;
+  padding: 0px;
+  z-index: 1;
+  padding-top: 12px;
+}
+
+.ownerInfo {
+  position: relative;
+  font-size: 16px;
+  text-align: "left";
+  cursor: pointer;
+  text-align: left;
+  padding-top: 40px;
+  width: 40%;
+  height: 65%;
+  border: 0.1px solid#d1e0e0;
+}
+/*Patrick Sherwin*/
+.title {
+  font-size: 18px;
+  font-weight: 600;
+  text-align: left;
+  padding-left: 10%;
+}
+.pa {
+  font-size: 16px;
+  text-align: left;
+  height: 65%;
+  padding-left: 10%;
+  padding-top: 3%;
+  padding-right: 5%;
+  padding-bottom: 5%;
+  font-weight: 300;
+}
+.par {
+  font-size: 16px;
+  text-align: left;
+  height: 65%;
+  padding: 3% 0% 0% 0%;
+}
+
+/*Support.jsx component*/
+.support {
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 30px;
+  font-family: Sans-serif;
+}
+.pledge__info {
+  width: 40%;
+  height: 65%;
+  border: 0.1px solid#d1e0e0;
+  font-size: 16px;
+  text-align: center;
+  font-family: Sans-serif;
+}
+.pledge__amount {
+  font-size: 16px;
+  font-weight: 300;
+}
+.Input {
+  margin-bottom: 8px;
+}
+.Input :visited {
+  border-color: #007460;
+}
+
+/*reward.jsx component*/
+.selReward {
+  border: 0.1px solid#d1e0e0;
+  width: 250px;
+  font-size: 8px;
+  text-align: left;
+  font-family: Sans-serif;
+  font-weight: 200px;
+  padding-left: 8px;
+}
+.selReward:hover {
+  background: #009d73;
+  /* content: attr("select this reward"); */
+}
+
+/*otherRewards.jsx component*/
+.otherRewards {
+  width: 250px;
+  border: 0.1px solid#d1e0e0;
+  font-family: Sans-serif;
+  padding-left: 8px;
+  font-size: 8px;
+}
+.firstRow {
+  font-size: 5px;
+  color: #606361;
+}
+.secondRow {
+  font-size: 8px;
+}
+.giftList {
+  font-weight: 300;
+}
+.otherRewards:hover {
+  background: #009d73;
+  /* content: attr("select this reward"); */
+}

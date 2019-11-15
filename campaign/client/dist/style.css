@@ -1,12 +1,12 @@
 .about {
   font-size: 1.1rem;
 }
-img {
+#cimg {
   height: auto;
   display: block;
   max-width: 40%;
 }
-p {
+#cp {
   font-size: 1.1rem;
   line-height: 2rem;
   max-width: 40%;
