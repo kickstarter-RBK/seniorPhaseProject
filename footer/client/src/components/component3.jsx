@@ -104,11 +104,14 @@ class Copyright extends React.Component {
         </section>
         <section id="copyrightSection">
           <div className="flex items-center mb3 mb0-lg">
-            <img
-              className="icons"
-              src="https://a.kickstarter.com/favicon.ico"
-            ></img>
-            <span> Kickstarter, PBC © 2019</span>
+            <span>
+              {" "}
+              <img
+                id="copyrighticon"
+                src="https://a.kickstarter.com/favicon.ico"
+              ></img>{" "}
+              Kickstarter, PBC © 2019
+            </span>
           </div>
         </section>
         <br></br>
