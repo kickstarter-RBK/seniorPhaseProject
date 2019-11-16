@@ -1,5 +1,5 @@
 # Front End Capstone
-#### Kickstarter Website
+### Kickstarter Website
 
 
 ## Main Idea
