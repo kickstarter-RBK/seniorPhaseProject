@@ -1,0 +1,13 @@
+.about {
+  font-size: 1.1rem;
+}
+#cimg {
+  height: auto;
+  display: block;
+  max-width: 40%;
+}
+#cp {
+  font-size: 1.1rem;
+  line-height: 2rem;
+  max-width: 40%;
+}
