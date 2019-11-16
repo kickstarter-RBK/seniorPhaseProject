@@ -2,12 +2,38 @@
 <html>
   <head>
     <title>Proxy</title>
+    <link rel="stylesheet" type="text/css" href="./style.css" />
+    <link rel="stylesheet" type="text/css" href="index.css" />
+    <link rel="stylesheet" type="text/css" href="sideBar.css" />
+    <link rel="stylesheet" type="text/css" href="footer.css" />
+    <style>
+      .container {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        grid-template-rows: auto auto auto;
+      }
+      #header {
+        grid-area: 1 / 1 / span 1 / span 3;
+      }
+      #campaign {
+        grid-area: 2 / 2 / span 1 / span 1;
+      }
+      #sidebar {
+        grid-area: 2 / 3 / span 1 / span 1;
+      }
+      #footer {
+        grid-area: 3 / 1 / span 1 / span 3;
+      }
+    </style>
   </head>
   <body>
-    <div id="header"></div>
-    <div id="campaign"></div>
-    <div id="faq"></div>
-    <div id="footer"></div>
+    <div class="container">
+      <div id="header"></div>
+      <div id="campaign"></div>
+      <div id="sidebar"></div>
+      <div id="footer"></div>
+    </div>
+
     <script
       crossorigin
       src="https://unpkg.com/react@16/umd/react.development.js"
@@ -16,10 +42,10 @@
       crossorigin
       src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"
     ></script>
-    <script src="http://localhost:3000/bundle.js"></script>
-    <script src="http://localhost:3001/bundle.js"></script>
-    <script src="http://localhost:3002/bundle.js"></script>
-    <script src="http://localhost:3003/bundle.js"></script>
+    <script src="https://hidden-sands-74131.herokuapp.com/bundle.js"></script>
+    <script src="https://fierce-shore-35529.herokuapp.com/bundle.js"></script>
+    <script src="https://limitless-thicket-91539.herokuapp.com/bundle.js"></script>
+    <script src="https://fast-castle-72226.herokuapp.com/bundle.js"></script>
 
     <!-- <script>
     ReactDOM.render(React.createElement(Component1), document.getElementById("footer"));

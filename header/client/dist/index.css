@@ -85,10 +85,9 @@ button{
     fill: #05ce78;
 }
 a{
-    margin-left: 1.8rem;
+    margin-left: 1.4rem;
     color: #282828;
     text-decoration: none;
-    cursor: pointer;
 }
 .loginBtn{
     margin-left: 1.8rem;
@@ -316,19 +315,51 @@ video {
     text-align: center;
 }
 .remindBtn{
-    width: 100%;
     box-shadow: inset 0px 0px 0px 1px #DCDEDD;
-    background-color: #FFFFFF;
+   
     color: #282828 !important;
     padding: 0 1.8rem;
-    font-size: 1.4rem;
-    height: 4.2rem;
+    font-size: 0.7rem;
+    height: 3.5rem;
     font-weight: 500;
     transition: all 0.25s ease-in-out !important;
     text-align: center;
-    position: relative;
+    line-height: unset !important;
+}
+.rmicons{
+    width: 100%;
+    padding-left:20px;
+    padding-bottom:10px ;
+    justify-content: center;
+   
+}
+.basis50p {
+    flex-basis: 50%;
+}
+
+#icon--facebook{
+    fill: #39579A;
+    width: 1.5rem;
+    height: 1.5rem;
+    color: #2752ff;
+}
+
+.mr4 {
+    margin-right: 2.2rem;
+}
+.inline-block {
     display: inline-block;
 }
-.text-nowrap{
-
+#icon--twitter{
+    fill: #00ABF0;
+    width: 1.5rem;
+    height: 1.5rem;
+}
+.icon--mail{
+    color: #949494;
+    width: 1.5rem;
+    height: 1.5rem;
+}
+p{
+    color: #848080;
 }
